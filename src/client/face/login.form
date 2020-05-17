@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.face.login">
+  <grid id="27dc6" binding="home" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="550" y="315" width="812" height="1166"/>
+    </constraints>
+    <properties>
+      <background color="-12828863"/>
+      <enabled value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="23925" binding="login" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-12828863"/>
+          <enabled value="true"/>
+          <font size="14"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a75b9" class="javax.swing.JButton" binding="login_button_exit">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-60416"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-1181185"/>
+              <hideActionText value="true"/>
+              <horizontalTextPosition value="11"/>
+              <text value="退出"/>
+            </properties>
+          </component>
+          <component id="9b484" class="javax.swing.JLabel" binding="login_label_logo">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0" ipadx="30" ipady="40"/>
+            </constraints>
+            <properties>
+              <font size="48"/>
+              <foreground color="-16711691"/>
+              <text value="复兴银行 - 账户登录"/>
+            </properties>
+          </component>
+          <component id="f94c9" class="javax.swing.JPasswordField" binding="login_passwordField_password">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="0.0" weighty="0.0" ipady="22"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="请输入密码"/>
+            </properties>
+          </component>
+          <component id="3e3fa" class="javax.swing.JTextField" binding="login_textField_account">
+            <constraints>
+              <grid row="1" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="0.0" weighty="0.0" ipady="22"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+              <toolTipText value="请输入账户"/>
+            </properties>
+          </component>
+          <component id="a5ec" class="javax.swing.JLabel" binding="login_label_account">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1247233"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-1181185"/>
+              <text value="账户:  "/>
+            </properties>
+          </component>
+          <component id="ad93" class="javax.swing.JLabel" binding="login_label_password">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1181441"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-1181185"/>
+              <text value="密码:  "/>
+            </properties>
+          </component>
+          <component id="dfd06" class="javax.swing.JButton" binding="login_button_commit">
+            <constraints>
+              <grid row="4" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-13500672"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-914176"/>
+              <hideActionText value="false"/>
+              <text value="登录"/>
+            </properties>
+          </component>
+          <component id="19f9c" class="javax.swing.JLabel" binding="login_label_error">
+            <constraints>
+              <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-5239542"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-914176"/>
+              <text value="提示:  账号或密码错误"/>
+            </properties>
+          </component>
+          <component id="f4c28" class="javax.swing.JButton" binding="login_button_regitered">
+            <constraints>
+              <grid row="5" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-15714086"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-263682"/>
+              <hideActionText value="true"/>
+              <text value="注册"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="38af4" binding="registered" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-12828863"/>
+          <enabled value="false"/>
+          <foreground color="-12828863"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="12c13" class="javax.swing.JTextField" binding="registered_textField_password">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="0.0" weighty="0.0" ipady="22"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="9e4fe" class="javax.swing.JTextField" binding="registered_textField_okPassword">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="0.0" weighty="0.0" ipady="22"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="3c54c" class="javax.swing.JButton" binding="registered_button_commit">
+            <constraints>
+              <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-13500672"/>
+              <font size="22"/>
+              <foreground color="-13548802"/>
+              <text value="注册"/>
+            </properties>
+          </component>
+          <component id="53f8e" class="javax.swing.JLabel" binding="registered_label_account">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1181185"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-1181185"/>
+              <text value="姓名:  "/>
+            </properties>
+          </component>
+          <component id="6f28d" class="javax.swing.JLabel" binding="registered_label_okPassword">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1181185"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-1181185"/>
+              <text value="确认:  "/>
+            </properties>
+          </component>
+          <component id="497b" class="javax.swing.JLabel" binding="registered_label_passowrd">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1247233"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-1181185"/>
+              <text value="密码:  "/>
+            </properties>
+          </component>
+          <component id="1e9c8" class="javax.swing.JTextField" binding="registered_textField_account">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="0.0" weighty="0.0" ipadx="400" ipady="22"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="d3533" class="javax.swing.JButton" binding="registered_button_back">
+            <constraints>
+              <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1522"/>
+              <font size="22"/>
+              <foreground color="-914176"/>
+              <text value="返回"/>
+            </properties>
+          </component>
+          <component id="6bb78" class="javax.swing.JLabel" binding="registered_label_logo">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0" ipadx="30" ipady="40"/>
+            </constraints>
+            <properties>
+              <font size="48"/>
+              <foreground color="-16711691"/>
+              <text value="复兴银行 - 账户注册"/>
+            </properties>
+          </component>
+          <component id="e5533" class="javax.swing.JLabel" binding="registered_label_error">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-60416"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-60416"/>
+              <text value="两次输入的密码不一致"/>
+            </properties>
+          </component>
+          <component id="6698b" class="javax.swing.JTextField" binding="registered_textField_id">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+              <gridbag weightx="0.0" weighty="0.0" ipadx="400" ipady="22"/>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="db775" class="javax.swing.JLabel" binding="registered_label_id">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1181185"/>
+              <enabled value="true"/>
+              <font size="22"/>
+              <foreground color="-1181185"/>
+              <text value="账号:  "/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c2d0" binding="index" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-15714086"/>
+          <enabled value="true"/>
+          <foreground color="-1181185"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="c2625" binding="index_JPanel_buttonBar" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-15714086"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="51190" class="javax.swing.JButton" binding="index_button_addMoney">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipadx="80" ipady="10"/>
+                </constraints>
+                <properties>
+                  <background color="-13500672"/>
+                  <enabled value="true"/>
+                  <font size="20"/>
+                  <foreground color="-11859969"/>
+                  <text value="存款"/>
+                </properties>
+              </component>
+              <component id="4538e" class="javax.swing.JButton" binding="index_button_removeMoney">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="10"/>
+                </constraints>
+                <properties>
+                  <background color="-1522"/>
+                  <font size="20"/>
+                  <foreground color="-60651"/>
+                  <text value="取款"/>
+                </properties>
+              </component>
+              <component id="8a24b" class="javax.swing.JButton" binding="index_button_selectJiaoYi">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="10"/>
+                </constraints>
+                <properties>
+                  <background color="-13548802"/>
+                  <font size="20"/>
+                  <foreground color="-1181185"/>
+                  <text value="明细"/>
+                </properties>
+              </component>
+              <component id="cade6" class="javax.swing.JButton" binding="index_button_updateMoney">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="10"/>
+                </constraints>
+                <properties>
+                  <background color="-3273566"/>
+                  <font size="20"/>
+                  <foreground color="-1181185"/>
+                  <text value="转账"/>
+                </properties>
+              </component>
+              <component id="2529a" class="javax.swing.JButton" binding="index_button_repassword">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="10"/>
+                </constraints>
+                <properties>
+                  <background color="-959988"/>
+                  <font size="20"/>
+                  <foreground color="-1181185"/>
+                  <text value="改密"/>
+                </properties>
+              </component>
+              <component id="f4a06" class="javax.swing.JButton" binding="index_button_yue">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0" ipady="10"/>
+                </constraints>
+                <properties>
+                  <background color="-1522"/>
+                  <font size="20"/>
+                  <foreground color="-13548802"/>
+                  <text value="余额"/>
+                </properties>
+              </component>
+              <component id="3ab" class="javax.swing.JButton" binding="index_button_back">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <background color="-914176"/>
+                  <font size="20"/>
+                  <foreground color="-1181441"/>
+                  <text value="退登"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="42bcd" class="javax.swing.JList" binding="index_JList_ad">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+              <gridbag weightx="0.0" weighty="0.0" ipadx="400" ipady="350"/>
+            </constraints>
+            <properties>
+              <background color="-12922369"/>
+              <dropMode value="INSERT"/>
+              <enabled value="true"/>
+              <font size="20"/>
+              <foreground color="-60416"/>
+              <selectionMode value="0"/>
+            </properties>
+          </component>
+          <component id="8b0a1" class="javax.swing.JLabel" binding="index_label_welcome">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0" ipadx="30" ipady="40"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <font size="48"/>
+              <foreground color="-16711691"/>
+              <text value="欢迎你:  未知用户"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

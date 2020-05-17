@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.face.indexwindow.SelectJiaoYi">
+  <grid id="27dc6" binding="home" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="514" height="615"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="2f6ee">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="350" ipady="600"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="86a60" class="javax.swing.JList" binding="list">
+            <constraints/>
+            <properties>
+              <background color="-3273566"/>
+              <font size="20"/>
+              <foreground color="-16777216"/>
+              <selectionBackground color="-13548802"/>
+              <selectionForeground color="-898773"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

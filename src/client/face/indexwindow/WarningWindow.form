@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.face.indexwindow.WarningWindow">
+  <grid id="27dc6" binding="home" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="394" height="272"/>
+    </constraints>
+    <properties>
+      <background color="-16777216"/>
+      <enabled value="true"/>
+      <foreground color="-12828863"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="b592e" class="javax.swing.JLabel" binding="label_warning">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-1522"/>
+          <font size="26"/>
+          <foreground color="-1522"/>
+          <text value="您确定要进行操作吗?"/>
+        </properties>
+      </component>
+      <component id="5cc1f" class="javax.swing.JButton" binding="button_run">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-13500672"/>
+          <font size="24"/>
+          <foreground color="-15714086"/>
+          <text value="确定"/>
+        </properties>
+      </component>
+      <component id="d9085" class="javax.swing.JButton" binding="button_exit">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-60416"/>
+          <font size="24"/>
+          <foreground color="-1247233"/>
+          <text value="取消"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

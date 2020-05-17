@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.face.indexwindow.UpdateMoney">
+  <grid id="27dc6" binding="home" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="259" width="609" height="217"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="859be" class="javax.swing.JTextField" binding="textField_account">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="444" ipady="24"/>
+        </constraints>
+        <properties>
+          <font size="22"/>
+        </properties>
+      </component>
+      <component id="ec37d" class="javax.swing.JButton" binding="button_commit">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipady="24"/>
+        </constraints>
+        <properties>
+          <background color="-13500672"/>
+          <font size="22"/>
+          <foreground color="-60416"/>
+          <text value="转出"/>
+        </properties>
+      </component>
+      <component id="730d9" class="javax.swing.JTextField" binding="textField_number">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag weightx="0.0" weighty="0.0" ipady="24"/>
+        </constraints>
+        <properties>
+          <font size="22"/>
+        </properties>
+      </component>
+      <component id="2af2d" class="javax.swing.JLabel" binding="label_account">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font size="24"/>
+          <text value="对方账户:  "/>
+        </properties>
+      </component>
+      <component id="c1c2d" class="javax.swing.JLabel" binding="label_money">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font size="24"/>
+          <text value="转出金额:  "/>
+        </properties>
+      </component>
+      <component id="54471" class="javax.swing.JLabel" binding="label_error">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font size="24"/>
+          <foreground color="-914176"/>
+          <text value="错误"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.face.indexwindow.addMoney">
+  <grid id="27dc6" binding="home" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="681" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-13548802"/>
+      <enabled value="false"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="44882" class="javax.swing.JLabel" binding="label_head">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-12828863"/>
+          <font size="24"/>
+          <foreground color="-13500672"/>
+          <text value="请输入存款额度:  "/>
+        </properties>
+      </component>
+      <component id="f3533" class="javax.swing.JTextField" binding="textField_number">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="444" ipady="26"/>
+        </constraints>
+        <properties>
+          <font size="22"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="eede" class="javax.swing.JButton" binding="button_commit">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0" ipadx="44" ipady="22"/>
+        </constraints>
+        <properties>
+          <background color="-13500672"/>
+          <font size="22"/>
+          <foreground color="-60416"/>
+          <text value="存入"/>
+        </properties>
+      </component>
+      <component id="c74de" class="javax.swing.JLabel" binding="label_error">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font size="24"/>
+          <foreground color="-914176"/>
+          <text value="错误"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
