@@ -137,7 +137,10 @@ public abstract class BaseDAO {
      */
     @SuppressWarnings("all")
     public <E> E getOneLine(Connection conn, Class<E> clazz, String sql, Object... args) {
-        PreparedStatement ps = null;
+        if (isConnectionClosed(conn)) {
+            conn = JDBCUtils.getConnection();
+        }
+            PreparedStatement ps = null;
         ResultSet rs = null;
         ResultSetMetaData metaData = null;
         try {
@@ -185,5 +188,15 @@ public abstract class BaseDAO {
             }
         }
         return null;
+    }
+
+    private boolean isConnectionClosed(Connection connection) {
+        boolean result = false;
+        try {
+            result = connection.isClosed();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return result;
     }
 }

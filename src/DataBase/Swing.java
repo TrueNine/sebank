@@ -164,7 +164,7 @@ public class Swing implements UserInterface {
                         return bdi.transferById(conn,
                                 a,
                                 new AccountORM(
-                                        Integer.parseInt(id)
+                                        Integer.parseInt(targetId)
                                 ), Integer.parseInt(money));
                     } else {
                         return Str.error(Str.TRANSFER, Str.NO_MONEY);

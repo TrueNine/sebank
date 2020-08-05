@@ -55,7 +55,7 @@ public class DataBaseLogic extends BaseDAO implements BankDAOInterface {
                     String dml = SQL_UPDATE_FIRST_ZHANHAO + "yuer = ?" + SQL_UPDATE_LAST_ZHANHAO;
                     update(conn, dml, money + yuer, accountORM.getId());
                     // 加上交易记录
-                    PushRecording(conn, ADD, a, money);
+                    pushRecording(conn, ADD, a, money);
                     conn.commit();
                     news = sendNews(ADD, String.valueOf(money), OK);
                 } else {
@@ -98,7 +98,7 @@ public class DataBaseLogic extends BaseDAO implements BankDAOInterface {
                     String dml = SQL_UPDATE_FIRST_ZHANHAO + "yuer = ?" + SQL_UPDATE_LAST_ZHANHAO;
                     update(conn, dml, yuer - money, a.getId());
                     // 推送交易记录
-                    PushRecording(conn, REMOVE, a, money);
+                    pushRecording(conn, REMOVE, a, money);
                     SQLCommit(conn);
                     news = sendNews(REMOVE, String.valueOf(money), OK);
                 } else {
@@ -140,7 +140,7 @@ public class DataBaseLogic extends BaseDAO implements BankDAOInterface {
                         // 进行更改,推送记录
                         String dml = SQL_UPDATE_FIRST_ZHANHAO + "`password` = ?" + SQL_UPDATE_LAST_ZHANHAO;
                         update(conn, dml, newPassword, a.getId());
-                        PushRecording(conn, REPASSWORD + newPassword, a, 0);
+                        pushRecording(conn, REPASSWORD + newPassword, a, 0);
                         SQLCommit(conn);
                         news = sendNews(REPASSWORD, newPassword, OK);
                     } else {
@@ -191,10 +191,10 @@ public class DataBaseLogic extends BaseDAO implements BankDAOInterface {
                         String dml = SQL_UPDATE_FIRST_ZHANHAO + "yuer = ?" + SQL_UPDATE_LAST_ZHANHAO;
                         update(conn, dml, yuer - money, a.getId());
                         // 增加对方金额
-                        update(conn, dml, yuer + money, a.getId());
+                        update(conn, dml, t.getRemainderMoney() + money, t.getId());
                         // 推送交易记录
-                        PushRecording(conn, TRANSFER + "(" + t.getAccount() + ")", a, money);
-                        PushRecording(conn, TRANSFER_T + "(" + a.getAccount() + ")", t, money);
+                        pushRecording(conn, TRANSFER + "(" + t.getAccount() + ")", a, money);
+                        pushRecording(conn, TRANSFER_T + "(" + a.getAccount() + ")", t, money);
                         // 进行提交
                         SQLCommit(conn);
                         news = sendNews(TRANSFER, String.valueOf(money), OK);
@@ -318,7 +318,7 @@ public class DataBaseLogic extends BaseDAO implements BankDAOInterface {
      * @param money 金额
      * @return 是否成功
      */
-    private boolean PushRecording(Connection conn, String type, AccountORM a, int money) {
+    private boolean pushRecording(Connection conn, String type, AccountORM a, int money) {
         String dmli = SQL_INSERT_JIAOYI;
         AccountRecordingORM r = new AccountRecordingORM(
                 type,
